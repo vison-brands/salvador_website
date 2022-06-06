@@ -1,8 +1,5 @@
 .App{
     height: 200vh;
-}
-#root{
-    height: 200vh;
     width: 100%;
     background-image: url(./assets/Fondo\ SVDR.png);
     background-repeat: no-repeat;
@@ -10,6 +7,23 @@
     background-position: top;
     background-size: cover;
 }
-a{
-    font-size: 1.3rem;
+.main-container{
+    width: 1200px;
+    /* height: 200vh; */
+    /* background-color: aqua; */
+    /* box-shadow: 0px 0px 2px 1px rgba(0, 13, 255, 0.5); */
+
+}
+.content-container{
+        /* height: 100%; */
+        display: grid;
+        
+        grid-template-areas:   "header header"
+        "content sidebar"
+        "footer footer";
+
+        grid-template-columns: 2fr 10fr;
+        grid-template-rows: 1fr;
+        grid-gap:1rem;
+
 }

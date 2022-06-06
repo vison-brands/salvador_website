@@ -1,4 +1,4 @@
-#root{
+/* #root{
     height: 200vh;
     width: 100%;
     background-image: url(../../assets/Fondo\ SVDR.png);
@@ -8,6 +8,6 @@
     background-size: cover;
 }
 a{
-    /* color:rgb(255, 0, 12); */
-    font-size: 1.5rem;
-};
+    color:rgb(255, 0, 12);
+    font-size: 1.1rem;
+} */

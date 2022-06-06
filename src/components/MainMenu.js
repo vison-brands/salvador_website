@@ -4,7 +4,7 @@ import './MainMenu.css';
 
 class MainMenu extends Component{
     render(){
-        return <div class='main_menu col-span-2'>
+        return <div class='main_menu'>
                 <aside class="grid">            
                     <a class="py-0.5" href="https://www.instagram.com/">HOME</a>
                     <a class="py-0.5" href="https://www.instagram.com/">BIO</a>

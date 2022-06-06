@@ -6,12 +6,14 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App px-14"> 
+    <div className="App flex justify-center">
+    <main className="main-container">
       <Header/>
-      <main class="flex-auto grid grid-cols-12">
+      <div className="content-container">
         <MainMenu />
         <MainContainer />
-      </main>
+      </div>
+    </main> 
     </div>
   );
 }
