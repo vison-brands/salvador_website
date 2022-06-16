@@ -1,29 +1,30 @@
-// import Profile from './SalvadorContainer/Home/Profile'
-import Header from './components/oscanisms/Header'
-import MainMenu from './components/oscanisms/MainMenu'
-import MainContainer from './components/oscanisms/MainContainer'
-import './App.css';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Home from './pages/Home'
+import Bio from './pages/Bio'
+import Music from './pages/Music'
+import Dates from './pages/Dates'
+import Shop from './pages/Shop'
+import Newsletter from './pages/Newsletter'
+import NotFound from './pages/NotFound'
+import Navbar from './molecules/NavbarSidebar'
+import MainManu from './oscanisms/MainMenu'
 
-
-
-function App() {
+export default function App() {
   return (
-    <div className="App flex justify-center">
-    <main className="main-container">
-      <Header/>
-      <div className="content-container">
-        <MainMenu />
-        <MainContainer />
-      </div>
-    </main>
+    <div>
+        <BrowserRouter>
+          <Navbar />
+          <MainManu />
+          <Routes>
+            <Route path='/' element={<Home />}  />
+            <Route path='/Bio' element={<Bio />}  />
+            <Route path='/Music' element={<Music />}  />
+            <Route path='/Dates' element={<Dates />}  />
+            <Route path='/Shop' element={<Shop />}  />
+            <Route path='/Newsletter' element={<Newsletter />}  />
+            <Route path='*' element={<NotFound />}  />
+          </Routes>
+        </BrowserRouter>
     </div>
-  );
+  )
 }
-
-// const App = () => (
-//   <h1>
-//     hello
-//   </h1>
-// )
-
-export default App;

@@ -17,9 +17,9 @@
         /* height: 100%; */
         display: grid;
         
-        grid-template-areas:   "header header"
-        "content sidebar"
-        "footer footer";
+        grid-template-areas:    "header header"
+                                "content sidebar"
+                                "footer footer";
 
         grid-template-columns: 2fr 10fr;
         grid-template-rows: 1fr;
